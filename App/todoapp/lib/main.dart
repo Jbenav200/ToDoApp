@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
+import 'package:todoapp/UI/intray/intray_page.dart';
 import 'package:todoapp/models/global.dart';
 
 void main() {
@@ -46,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   new Container(
                   color: darkGray,
+                  child: IntrayPage(),
                 ),
                 new Container(color: Colors.orange,),
                 new Container(
@@ -90,6 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
               tabs: [
                 Tab(
                   icon: new Icon(Icons.calendar_today),
+                  
                 ),
                 Tab(
                   icon: new Icon(Icons.add),
